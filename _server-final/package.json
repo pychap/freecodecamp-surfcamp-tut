@@ -5,19 +5,15 @@
   "description": "A Strapi application",
   "scripts": {
     "build": "strapi build",
-    "console": "strapi console",
     "deploy": "strapi deploy",
-    "dev": "strapi develop",
     "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi",
-    "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.12.6",
-    "@strapi/plugin-users-permissions": "5.12.6",
-    "@strapi/strapi": "5.12.6",
+    "@strapi/plugin-cloud": "5.8.0",
+    "@strapi/plugin-users-permissions": "5.8.0",
+    "@strapi/strapi": "5.8.0",
     "better-sqlite3": "11.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -35,6 +31,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "24c6c588-0a1f-4539-9ef0-f9eb5e557967"
+    "uuid": "81134225-a137-4b07-9668-36c782142a97"
   }
 }
