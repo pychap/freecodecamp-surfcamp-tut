@@ -1,4 +1,4 @@
-import { HeroSection } from "@/components/blocks/HeroSection";
+import { BlockRenderer } from "@/components/BlockRenderer";
 import { getHomePage } from "@/data/loaders";
 import { notFound } from "next/navigation";
 
@@ -17,8 +17,6 @@ export default async function HomeRoute() {
   const blocks = data?.blocks || [];
   console.log(data);
   return (
-    <div>
-      <HeroSection {...blocks[0]} />
-    </div>
+      <BlockRenderer blocks={blocks} />
   );
 }
