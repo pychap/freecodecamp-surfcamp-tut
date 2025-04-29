@@ -1,13 +1,12 @@
+import { getHomePage } from "@/data/loaders";
+import { notFound } from "next/navigation";
+
 async function loader() {
   // path gets the data from Strapi
-  const path = "/api/home-page";
-  const BASE_URL = "http://localhost:1337";
-  const url = new URL(path, BASE_URL);
-
-  const response = await fetch(url.href);
-  const data = await response.json();
+  const data = await getHomePage();
   console.log(data);
-
+  if (!data) notFound();
+  
   return { ...data.data };
 }
 
